@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "İlk gezi"
+featuredImage: "https://instagram.fada1-10.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/c135.0.809.809/15535417_747986185354666_8365278966008774656_n.jpg"
 date:   2017-07-20 23:17:29 +0300
 categories: tutkuyla gez
 ---
@@ -23,3 +24,4 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
+

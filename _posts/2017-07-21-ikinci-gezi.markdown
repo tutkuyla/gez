@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "İkinci gezi"
+featuredImage: "https://instagram.fada1-10.fna.fbcdn.net/t51.2885-15/e35/20589722_108633633155961_6720661290299162624_n.jpg"
 date:   2017-07-20 23:17:29 +0300
 categories: tutkuyla gez
 ---

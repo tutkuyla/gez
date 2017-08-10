@@ -4,8 +4,14 @@
 
 <body data-smooth-scroll-offset="77">
     {% include header.html %}
-    {{ content }}
+    <div class="main-container">
+    {% include postSection.html %}
     {% include footer.html %}
+    </div>
+<script src="/js/jquery-3.1.1.min.js"></script>
+<script src="/js/parallax.js"></script>
+<script src="/js/smooth-scroll.min.js"></script>
+<script src="/js/scripts.js"></script>
 </body>
 
 </html>
