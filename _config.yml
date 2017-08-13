@@ -24,6 +24,7 @@ url: "http://gez.tutkuyla.com" # the base hostname & protocol for your site, e.g
 twitter_username: tutkuylagez
 github_username:  tutkuyla
 instagram_username: tutkuylagez
+permalink: /:title
 
 # Build settings
 markdown: kramdown
