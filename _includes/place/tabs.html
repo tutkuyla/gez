@@ -1,0 +1,18 @@
+<section class="space--xs">
+    <div class="container">
+        <div class="row text-center">
+            <ul class="tabs">
+                {% for place in include.places %}
+
+                <li class="">
+                    <a href="{{place.url | remove: 'index.html'}}">
+                        <div class="tab__title">
+                            <span class="h5">{{place.title}}</span>
+                    </a>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>

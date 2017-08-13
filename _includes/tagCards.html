@@ -1,0 +1,15 @@
+<section class="space--sm">
+    <div class="container">
+        <div class="row text-block">
+            <div class="col-sm-12">
+                <h3>{{page.title}} Hikayeleri</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            {% assign posts = site.posts | where_exp:'post', "post.tags contains include.currentTag" %} 
+                {% for post in posts %} 
+            {% include postCard.html post=post%} {% endfor %}
+        </div>
+    </div>
+</section>

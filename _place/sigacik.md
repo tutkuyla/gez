@@ -1,0 +1,4 @@
+---
+title: Sığacık
+parent: ege
+---

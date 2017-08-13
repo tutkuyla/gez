@@ -32,6 +32,18 @@ markdown: kramdown
 gems:
   - jekyll-feed
 
+collections:
+  place:
+    output: true
+    permalink: /yer/:name/index.html
+defaults:
+  -
+    scope: 
+      path: ""
+      type: place
+    values:
+      layout: "place"
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

@@ -1,20 +1,24 @@
-<section>
+<section class="space--xs">
     <div class="container">
         <div class="row">
             <div class="col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
                 <article>
                     <div class="article__title text-center">
-                        <h1 class="h2">{{ page.title }}</h1> <span>May 2nd 2016 in </span><span><a href="#">Web Design</a></span> </div>
+                        <h1 class="h2">{{ page.title }}</h1> 
+                        {% assign date = page.date%}
+
+                        <span>{% include util/dateString.html date=date %}</span>
+                    </div>
                     <div class="article__body"> <img alt="Image" src="{{ page.featuredImage }}"> {{ content }}
                     </div>
                     <div class="article__share text-center">
-                        <a class="btn bg--facebook btn--icon" href="#"> <span class="btn__text">
+                        <a class="btn bg--facebook btn--icon" href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}"> <span class="btn__text">
 								<i class="socicon socicon-facebook"></i>
-								Share on Facebook
+								Facebook ile paylaş
 							</span> </a>
-                        <a class="btn bg--twitter btn--icon" href="#"> <span class="btn__text">
+                        <a class="btn bg--twitter btn--icon" href="https://twitter.com/home?status={{site.url}}{{page.url}}"> <span class="btn__text">
 								<i class="socicon socicon-twitter"></i>
-								Share on Twitter
+								Twitter ile paylaş
 							</span> </a>
                     </div>
                 </article>

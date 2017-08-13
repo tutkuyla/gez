@@ -8,16 +8,7 @@
         
         <div class="row">
             {% for post in site.posts %}
-            <div class="col-sm-4">
-                <article class="feature feature-1">
-                    <a href="{{ post.url | prepend: site.baseurl }}" class="block"> <img alt="Image" src="{{post.featuredImage}}"> </a>
-                    <div class="feature__body boxed boxed--border"> <span>{{post.date}}</span>
-                        <h5>{{post.title}}</h5> <a href="{{ post.url | prepend: site.baseurl }}">
-							Devamını oku...
-						</a> </div>
-                </article>
-            </div>
-
+            {% include postCard.html post=post %}
             {% endfor %}
         </div>
     </div>

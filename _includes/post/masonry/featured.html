@@ -1,0 +1,16 @@
+{% assign post = include.post %}
+{% assign date = post.date %}
+<div class="masonry__item col-sm-12 col-xs-12 h">
+    <a class="block" href="{{ post.url }}">
+        <article class="imagebg border--round" data-scrim-bottom="8">
+            <span class="label">Yeni</span>
+            <div class="background-image-holder" style="background: url(&quot;img/blog-2.jpg&quot;); opacity: 1;">
+                <img alt="background" src="{{post.featuredImage}}">
+            </div>
+            <div class="article__title">
+                <span>{% include util/dateString.html date=date %}</span>
+                <h4>{{ post.title }}</h4>
+            </div>
+        </article>
+    </a>
+</div>

@@ -1,0 +1,28 @@
+[
+    {
+        "tag": "turkiye",
+        "name": "Türkiye",
+        "places": [
+            {
+                "tag": "trakya",
+                "name": "Trakya",
+                "places": [
+                    {
+                        "tag": "igneada",
+                        "name": "İğneada"
+                    }
+                ]
+            },
+            {
+                "tag": "ege",
+                "name": "Ege",
+                "places": [
+                    {
+                        "tag": "sigacik",
+                        "name": "Sığacık"
+                    }
+                ]
+            }
+        ]
+    }
+]

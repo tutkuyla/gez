@@ -1,0 +1,31 @@
+<section class="space--sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="masonry masonry-blog-magazine">
+                    <div class="row">
+                            {% assign featuredPosts = site.posts | where_exp: 'post', 'post.featured == true'%}
+                            {% for post in featuredPosts%}
+                                {% include post/masonry/featured.html post=post%}
+                            {% endfor %}
+
+
+                            {% for post in site.posts %}
+                            {% assign featured_urls = featuredPosts | map: 'slug' %}
+                                {% if featured_urls contains post.slug %}
+                                {% else %}
+                                    {% include post/masonry/standart.html post=post%}
+                                {% endif %}
+                            {% endfor %}
+                        <!--end masonry container-->
+                    </div>
+                    <!--end of row-->
+                
+                </div>
+                <!--end masonry-->
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>

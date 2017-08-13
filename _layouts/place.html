@@ -1,0 +1,62 @@
+{% assign sub_places = site.place | where:"parent", page.slug %}
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+
+<body data-smooth-scroll-offset="77">
+       {% include header.html %}
+    <div class="main-container">
+
+        {% if sub_places.size > 0 %}
+            {% include place/tabs.html places=sub_places%}
+        {% endif %}
+
+        {% assign tag = page.slug %}
+        {% include tagCards.html currentTag=tag %} {% include footer.html %}
+    </div>
+    <script src="{{site.baseurl}}/js/jquery-3.1.1.min.js"></script>
+    <script src="{{site.baseurl}}/js/parallax.js"></script>
+    <script src="{{site.baseurl}}/js/smooth-scroll.min.js"></script>
+    <script src="{{site.baseurl}}/js/scripts.js"></script>
+
+    <p>
+    <!-- Parents: <a href="{{ page.parent }}">{{page.parent}}</a> -->
+
+    <!-- {% assign parent = site.place | where:"slug", page.parent %}
+    {% assign list = "" | split:'' %}
+
+    {% assign navigation = 'abc' %}
+    {% assign current = page %}
+    {% for i in (1..50) %}
+        {% assign parent = site.place | where:"slug", current.parent %}
+        {{ parent[0].slug | jsonify }}
+        {% if parent.size > 0 %}
+        {% capture currentHtml %}
+            <a href="{{ current.url}}">current.title</a>
+        {% endcapture %}
+        
+            {% assign navigation = navigation | prepend: currentHtml %}
+            {% assign current = parent[0] %}
+        {% else %}
+            {% break %}
+        {% endif%}
+    {% endfor %} -->
+    <!-- {{ navigation  }}   -->
+    <!-- {{ parent[0]| jsonify}} -->
+</p>
+
+<!-- <p>
+    {% for sub in sub_places %}
+    
+    Subs: <a href="{{sub.url}}">{{ sub.title }}</a>
+    {% endfor %}
+
+    {% assign myint = 4 %}
+    {% for i in (1..4) %}
+        {% assign myint = i %}
+        {{ myint }}
+    {% endfor %}
+</p> -->
+</body>
+
+</html>
