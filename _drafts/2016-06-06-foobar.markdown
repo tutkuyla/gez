@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Tutkuyla markdown denemeleri. Stil ve benzeri denemeler için biçilmiş kaftan"
+featured: false
+featuredImage: "https://farm5.staticflickr.com/4438/36413711021_cd45f522d0_k_d.jpg"
+date:   2016-06-06 23:17:29 +0300
+categories: gezi
+tags: turkiye draft
+---
+Burası yalnızca markdown stil denemelerinin yapılacağı bir draft.
+- İlk maddem
+- ikinci maddem
+- sonraki madde
+
+1. Birinci 
+2. ikinci
+3. üçüncü

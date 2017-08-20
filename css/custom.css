@@ -1,1 +1,10 @@
 /*! Place your custom styles here */
+ul {
+    list-style: circle;
+    list-style-position: inside
+}
+
+ol {
+    list-style-position: inside;
+}
+
