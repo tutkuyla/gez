@@ -11,3 +11,17 @@ ol {
 article .article__body ul li {
     margin-bottom: 1em;
 }
+
+.instafeed[data-grid="1"][data-amount="8"] li {
+    display: inline-block;
+    width: 12.5vw;
+    height: 12.5vw;
+    overflow: hidden;
+  }
+
+  .instafeed img {
+    max-height: 100%;
+    max-width: none;
+    display: block;
+    margin: auto;
+  }
